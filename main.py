@@ -6,7 +6,7 @@ from win10toast import ToastNotifier
 toaster = ToastNotifier()
 
 url = 'https://rest.coinapi.io/v1/exchangerate/BTC/EUR'
-headers = {'X-CoinAPI-Key': '6C7D0D7B-2AE9-4625-ABD9-B58D907D82B9'}
+headers = {'X-CoinAPI-Key': 'API KEY'}
 res = requests.get(url, headers=headers)
 res = res.json()
 act_btc = round(res['rate'], 2)
